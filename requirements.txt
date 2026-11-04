@@ -5,3 +5,5 @@ seaborn
 openpyxl
 jupyter
 ipykernel
+scikit-learn
+joblib
