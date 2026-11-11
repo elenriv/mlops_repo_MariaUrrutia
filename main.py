@@ -1,8 +1,8 @@
 
 import pandas as pd
 
-from ft_eng import preparar_datos, preprocesador
-from model_evaluacion import MODELOS, comparar_modelos
+from mlops_pipeline.ft_eng import preparar_datos, preprocesador
+from mlops_pipeline.model_evaluacion import MODELOS, comparar_modelos
 
 
 def main():
