@@ -7,3 +7,5 @@ jupyter
 ipykernel
 scikit-learn
 joblib
+scipy
+streamlit

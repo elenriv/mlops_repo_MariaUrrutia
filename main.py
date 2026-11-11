@@ -3,7 +3,7 @@ import pandas as pd
 
 from mlops_pipeline.ft_eng import preparar_datos, preprocesador
 from mlops_pipeline.model_evaluacion import MODELOS, comparar_modelos
-
+from mlops_pipeline.monitoring import ejecutar_monitoreo
 
 def main():
     print("=" * 60)
@@ -31,6 +31,13 @@ def main():
         y_train,
         y_test
     )
+    
+    print("\nEJECUTANDO MONITOREO DE DATA DRIFT")
+    reporte_drift = ejecutar_monitoreo(
+    X_train,
+    X_test
+    )
+
     
     print("\n4. Resultados de la evaluación:")
     print(resultados.to_string(index=False))
